@@ -29,3 +29,8 @@
 
 <!-- Date | Mode | Artifact | Validator Exit | Score | Notes -->
 | 2026-03-23 | create | agentforger (full migration) | 0 | — | Initial AgentForger setup |
+| 2026-03-27 | create | mitla-architect (full workspace) | 0 | 16P/0F/0W | Foundation agent with Docker-first verification |
+| 2026-03-27 | create | mitla-ventas, mitla-cobranza, mitla-logistica, mitla-facturacion, mitla-proveedores, mitla-pagos (light agents) | 0 | — | Domain owner agents — define requirements, no code |
+| 2026-03-27 | create | mitla-pm, mitla-tech-lead (light agents) | 0 | — | Management layer — PM + tech lead |
+| 2026-03-27 | create | mitla-frontend, mitla-backend, mitla-db, mitla-qa, mitla-integration (light agents) | 0 | — | Technical team — sequential per module |
+| 2026-03-27 | create | cfdi-facturama (skill) | 0 | — | CFDI 4.0 Facturama PAC integration skill |

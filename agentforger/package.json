@@ -1,0 +1,11 @@
+{
+  "name": "agentforger-validators",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Validation framework for OpenClaw skills and agents",
+  "scripts": {
+    "test": "node validators/validate-repo.mjs"
+  },
+  "author": "agentforger-maintainers",
+  "license": "MIT"
+}

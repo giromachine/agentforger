@@ -81,3 +81,77 @@ And justify it in terms of operational autonomy, isolation needs, and expected p
 | update | Diff proposal, updated artifact, audit report |
 | refactor | Pre-audit report, restructured artifact, post-audit report |
 | audit | Audit report, scorecard (no file writes) |
+
+## Inter-agent protocol
+
+AgentForger operates as a meta-agent within a team of specialized OpenClaw agents. This section defines the coordination protocol.
+
+### 1. Creating agent children
+
+When AgentForger creates a new agent workspace, it generates files in this order:
+
+1. **Directory structure** — `agents/<name>/` and optional dedicated workspace
+2. **Core identity** — `AGENTS.md` (role, rules, outputs)
+3. **Persona** — `SOUL.md` (voice, values, limits)
+4. **Context files** — `USER.md`, `MEMORY.md`, `TOOLS.md`, `HEARTBEAT.md`, `BOOTSTRAP.md` (if applicable)
+5. **Tooling** — validators, templates, scripts (if dedicated workspace)
+6. **Integration** — skill references in parent workspace `skills/` (if light agent)
+
+Each agent receives its own identity bundle. AgentForger does not generate a single monolithic config.
+
+### 2. Handoff format
+
+When invoking a child agent (via `sessions_spawn` or direct invocation), AgentForger passes:
+
+- **Task description** — clear, self-contained objective
+- **Context** — domain, constraints, required outputs
+- **Approval authority** — explicit statement that user approval is required for side-effects
+- **Return protocol** — what to report back and in what format
+
+Example handoff:
+```
+Task: Audit skills/backup for completeness and validator compliance.
+Context: User requested read-only audit; no file writes permitted.
+Authority: Report findings; do not auto-fix without user approval.
+Return: Audit report with scorecard (PASS/FAIL/WARN counts).
+```
+
+### 3. Approval authority
+
+**User is always the final authority.**
+
+- AgentForger requests approval at phase 6 (approval gate) before writing files
+- Child agents request approval before:
+  - Writing files outside their designated workspace
+  - External API calls (messaging, webhooks, deploys)
+  - Destructive operations (deletes, overwrites of user data)
+- No agent may approve on behalf of the user
+- No agent may delegate approval to another agent
+
+### 4. Isolation rule
+
+Each agent in the team has its own identity:
+
+- **SOUL.md** — defines voice, values, limits (unique per agent)
+- **AGENTS.md** — defines role, rules, outputs (unique per agent)
+
+**AgentForger never overwrites the identity of other agents.**
+
+When updating an agent, AgentForger:
+- Reads the existing `SOUL.md` and `AGENTS.md`
+- Proposes changes as diffs
+- Waits for user approval before writing
+- Preserves the agent's established persona unless explicitly instructed to change it
+
+### 5. Reporting protocol
+
+When a child agent completes a task, it returns:
+
+- **Status** — success, partial, failed
+- **Outputs** — files written, commands run, audit results
+- **Blockers** — unresolved issues, missing approvals, external dependencies
+- **Next steps** — recommended actions (if applicable)
+
+The child agent reports **to the invoking agent** (usually AgentForger) or **directly to the user** (if invoked at top level).
+
+AgentForger consolidates child reports into a summary for the user and does not filter or editorialize results.
