@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Session transcripts
+sessions/
+
+# Memory files (agent-specific, not portable)
+memory/*.md
+
+# Transcript logs
+*.jsonl
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Editor state
+.vscode/
+*.swp
+*~
