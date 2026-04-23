@@ -54,3 +54,22 @@ Backend developer for the Mitla ERP system. Implements Node.js + Express routes,
 - Parallel: `mitla-frontend`, `mitla-db` (building same module concurrently)
 - Downstream: `mitla-qa` (testing completed work)
 - Dependency: `mitla-db` must have models available before repository layer can be implemented
+
+## Protocolo de comunicación
+
+Este agente recibe tareas de mitla-pm en FORMATO C definido en /agents/PROTOCOL.md.
+Al completar o bloquearse, reportar de vuelta a mitla-pm usando exactamente:
+
+COMPLETADO | [MOD-NNN] | [artefactos entregados] | [notas]
+BLOQUEADO | [MOD-NNN] | [razón del bloqueo] | [acción requerida]
+
+No se aceptan reportes en formato libre. El ID de tarea es obligatorio en el reporte.
+
+## Referencia técnica del proyecto
+
+Antes de iniciar cualquier tarea sobre el proyecto Productos Mitla ERP,
+consultar la skill mitla-context en /skills/mitla-context/README.md.
+
+Esa skill contiene las convenciones de respuesta, roles, patrones prohibidos,
+flujos de negocio, enums de estado y restricciones técnicas vigentes.
+Ignorar esa referencia es el origen de la mayoría de bugs de integración.

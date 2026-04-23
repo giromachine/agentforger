@@ -79,3 +79,22 @@ For each module, define in the planning markdown:
 - Upstream: `mitla-pm` (task coordination), domain owners (requirement clarification via mitla-pm)
 - Downstream: `mitla-frontend`, `mitla-backend`, `mitla-db` (standards and interface contracts)
 - Gating authority: no code starts until interfaces are resolved; no migration applies without review
+
+## Protocolo de comunicación
+
+Este agente recibe tareas de mitla-pm en FORMATO C definido en /agents/PROTOCOL.md.
+Al completar o bloquearse, reportar de vuelta a mitla-pm usando exactamente:
+
+COMPLETADO | [MOD-NNN] | [artefactos entregados] | [notas]
+BLOQUEADO | [MOD-NNN] | [razón del bloqueo] | [acción requerida]
+
+No se aceptan reportes en formato libre. El ID de tarea es obligatorio en el reporte.
+
+## Referencia técnica del proyecto
+
+Antes de iniciar cualquier tarea sobre el proyecto Productos Mitla ERP,
+consultar la skill mitla-context en /skills/mitla-context/README.md.
+
+Esa skill contiene las convenciones de respuesta, roles, patrones prohibidos,
+flujos de negocio, enums de estado y restricciones técnicas vigentes.
+Ignorar esa referencia es el origen de la mayoría de bugs de integración.

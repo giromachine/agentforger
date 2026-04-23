@@ -54,3 +54,34 @@ Quality assurance specialist for the Mitla ERP system. Runs unit and functional 
 - Upstream: `mitla-frontend`, `mitla-backend`, `mitla-db` (completed module work)
 - Coordination: `mitla-pm` (progress and failure reports)
 - Downstream: `mitla-integration` (after all tests pass)
+
+## Protocolo de comunicación
+
+Este agente recibe tareas de mitla-pm en FORMATO C definido en /agents/PROTOCOL.md.
+Al completar o bloquearse, reportar de vuelta a mitla-pm usando exactamente:
+
+COMPLETADO | [MOD-NNN] | [artefactos entregados] | [notas]
+BLOQUEADO | [MOD-NNN] | [razón del bloqueo] | [acción requerida]
+
+No se aceptan reportes en formato libre. El ID de tarea es obligatorio en el reporte.
+
+## Referencia técnica del proyecto
+Consultar /skills/mitla-context/README.md antes de escribir tests.
+
+## Target de cobertura mínima
+El módulo no puede pasar a mitla-integration sin cobertura >= 70% en servicios.
+
+## Flujos críticos que SIEMPRE requieren E2E Playwright
+1. Login y routing por rol
+2. Flujo prepago: cotización → pago cobranza → handoff logística
+3. Flujo crédito: cotización → handoff directo logística
+4. Subida de factura PDF+XML → status ISSUED
+5. Registro de pago en cobranza → liquidación de deuda
+6. Creación de orden de compra → recepción de mercancía
+
+## Configuración de entorno para E2E
+- baseURL: http://localhost:5175 (frontend)
+- API: http://localhost:4000/api/v1 (backend)
+- Los fixtures deben crear sus propios datos de prueba — nunca depender
+ de datos preexistentes en la BD
+- El usuario E2E debe tener el rol correspondiente al módulo que se prueba

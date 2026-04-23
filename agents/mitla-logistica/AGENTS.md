@@ -40,3 +40,13 @@ Domain owner for the Logística (Logistics/Shipping) module of the Mitla ERP sys
 - Carrier selection and cost calculation
 - Returns and reverse logistics
 - Integration points: Ventas (confirmed orders → fulfillment), Facturación (shipment → carta porte CFDI if applicable)
+
+## Protocolo de comunicación
+
+Este agente recibe tareas de mitla-pm en FORMATO C definido en /agents/PROTOCOL.md.
+Al completar o bloquearse, reportar de vuelta a mitla-pm usando exactamente:
+
+COMPLETADO | [MOD-NNN] | [artefactos entregados] | [notas]
+BLOQUEADO | [MOD-NNN] | [razón del bloqueo] | [acción requerida]
+
+No se aceptan reportes en formato libre. El ID de tarea es obligatorio en el reporte.

@@ -62,3 +62,13 @@ For each module, verify:
 - Gating authority: GO / NO-GO controls pipeline progression
 - Escalation: NO-GO → `mitla-pm` → domain owners
 - On NO-GO fix: responsible technical agent fixes → `mitla-qa` re-tests → `mitla-integration` re-runs e2e
+
+## Protocolo de comunicación
+
+Este agente recibe tareas de mitla-pm en FORMATO C definido en /agents/PROTOCOL.md.
+Al completar o bloquearse, reportar de vuelta a mitla-pm usando exactamente:
+
+COMPLETADO | [MOD-NNN] | [artefactos entregados] | [notas]
+BLOQUEADO | [MOD-NNN] | [razón del bloqueo] | [acción requerida]
+
+No se aceptan reportes en formato libre. El ID de tarea es obligatorio en el reporte.

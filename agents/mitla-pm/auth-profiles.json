@@ -7,8 +7,38 @@
       "access": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfRU1vYW1FRVo3M2YwQ2tYYVhwN2hyYW5uIiwiZXhwIjoxNzc0ODI3NjUzLCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiY2hhdGdwdF9hY2NvdW50X2lkIjoiMGIyOTJlN2ItZDI0YS00OWViLTk3YWUtYjAxZDBkN2UyZDAxIiwiY2hhdGdwdF9hY2NvdW50X3VzZXJfaWQiOiJ1c2VyLXo0SUM2c0JvbHo3UVozSlB5NVVPZmdLSl9fMGIyOTJlN2ItZDI0YS00OWViLTk3YWUtYjAxZDBkN2UyZDAxIiwiY2hhdGdwdF9jb21wdXRlX3Jlc2lkZW5jeSI6Im5vX2NvbnN0cmFpbnQiLCJjaGF0Z3B0X3BsYW5fdHlwZSI6InBsdXMiLCJjaGF0Z3B0X3VzZXJfaWQiOiJ1c2VyLXo0SUM2c0JvbHo3UVozSlB5NVVPZmdLSiIsInVzZXJfaWQiOiJ1c2VyLXo0SUM2c0JvbHo3UVozSlB5NVVPZmdLSiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJjYXJsc25hdmFyckBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTc3Mzk2MzY1MiwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJlZWVlMjNlNS04ODAzLTQzZWEtYWQ3OC05NWYzYzkzMWNkODEiLCJuYmYiOjE3NzM5NjM2NTIsInB3ZF9hdXRoX3RpbWUiOjE3NzM5NjM2NTE5NjIsInNjcCI6WyJvcGVuaWQiLCJwcm9maWxlIiwiZW1haWwiLCJvZmZsaW5lX2FjY2VzcyIsImFwaS5jb25uZWN0b3JzLnJlYWQiLCJhcGkuY29ubmVjdG9ycy5pbnZva2UiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzX2Q4bTlxd28waFE0aXJDZERDNmlDakhNZCIsInNsIjp0cnVlLCJzdWIiOiJnb29nbGUtb2F1dGgyfDEwMjIzMzYzMzAyMTU1NjMzNDE5NiJ9.ckq1cjtFHUT417AC8pWtKrvQ8MUadXfEfpnGNGmD5T23ZPLpXBqQL8MidrUj8c3RBmd9oRV3QEZizW2W-QOYxUc2vI9gD8jw5YVqyM_wikvqqIOkSVbI3Tm42Gea_AP-elrSjPx5cYkPqUwiXnq6tM4XmHfz6wLdpLVyBN0DhXpKugk2Ubsjd_vNnYT8GvdzgZuVZVpJWxvDpHJSeDcma5iWQsJXkMcOho5UwD92amjtGy0HgkgzP9mn3aXPpNi-HaqXcqeWc5LLox9-OnwlArWK_fpYpa5ov9P2lS76bygudSq-X35SNJpnLWzf8w2OY13l0OPIq7zL2F73ImFFzAa14k0Iq2FhiPBP8mriGEnRLtFVj4OeYW-513DsKkAIl1V3BA-hg9EGAAbMoINVi34HygAVJLfM7h9XlJ0f62CQf9GU2HA9wuxwX7b1riW9NksNQMl1Ggj_PpST_CzCot5omHqL38lzvrULEGJR4XI7RcKiMIMY0QT0W7rTksgQ2_-1gg1G-8b25pPmKCfu4hbh6xqbwxlp4ZO2rVXrsU98pUr-x0jk0FiiXBBsIRhGv0Wzic2_h_RV2VddWOE43SqDtMhfIVLu3ZW7TpmL1GpaoWR9_t4YPO9kDwqXFV6-zYkvS-IkWwViSo5coBisOyeWMNJT7rp9EtQf1ICHAI4",
       "refresh": "rt_7nS2AVCnWipEauSzh9cDR41pBKTG7uihYvAGW__Sakc.91vKTrEByK9XjR8hoBpC6I1PEsUyH9LHmwBi9rxGzek",
       "expires": 1774827653000,
-      "accountId": "0b292e7b-d24a-49eb-97ae-b01d0d7e2d01"
+      "accountId": "0b292e7b-d24a-49eb-97ae-b01d0d7e2d01",
+      "managedBy": "codex-cli"
+    },
+    "openai:default": {
+      "type": "api_key",
+      "provider": "openai",
+      "key": "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"
+    },
+    "openai-codex:carlsnavarr@gmail.com": {
+      "type": "oauth",
+      "provider": "openai-codex",
+      "access": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfRU1vYW1FRVo3M2YwQ2tYYVhwN2hyYW5uIiwiZXhwIjoxNzc3MDU0NTU4LCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiY2hhdGdwdF9hY2NvdW50X2lkIjoiMGIyOTJlN2ItZDI0YS00OWViLTk3YWUtYjAxZDBkN2UyZDAxIiwiY2hhdGdwdF9hY2NvdW50X3VzZXJfaWQiOiJ1c2VyLXo0SUM2c0JvbHo3UVozSlB5NVVPZmdLSl9fMGIyOTJlN2ItZDI0YS00OWViLTk3YWUtYjAxZDBkN2UyZDAxIiwiY2hhdGdwdF9jb21wdXRlX3Jlc2lkZW5jeSI6Im5vX2NvbnN0cmFpbnQiLCJjaGF0Z3B0X3BsYW5fdHlwZSI6InByb2xpdGUiLCJjaGF0Z3B0X3VzZXJfaWQiOiJ1c2VyLXo0SUM2c0JvbHo3UVozSlB5NVVPZmdLSiIsImxvY2FsaG9zdCI6dHJ1ZSwidXNlcl9pZCI6InVzZXItejRJQzZzQm9sejdRWjNKUHk1VU9mZ0tKIn0sImh0dHBzOi8vYXBpLm9wZW5haS5jb20vcHJvZmlsZSI6eyJlbWFpbCI6ImNhcmxzbmF2YXJyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlfSwiaWF0IjoxNzc2MTkwNTU3LCJpc3MiOiJodHRwczovL2F1dGgub3BlbmFpLmNvbSIsImp0aSI6IjZmMTNhYjllLTdhM2ItNGU4Yy04NTdjLWVjY2U3YmY5NDAxMiIsIm5iZiI6MTc3NjE5MDU1NywicHdkX2F1dGhfdGltZSI6MTc3NjE5MDU1NzIyNywic2NwIjpbIm9wZW5pZCIsInByb2ZpbGUiLCJlbWFpbCIsIm9mZmxpbmVfYWNjZXNzIl0sInNlc3Npb25faWQiOiJhdXRoc2Vzc19JN0RXRFo3dHVNbm9SZllRYkE5Q0Z2THIiLCJzbCI6dHJ1ZSwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDIyMzM2MzMwMjE1NTYzMzQxOTYifQ.KQfDqUbT83EPS3be_fNSYmg_LD1t-XHhJ9IvcqGKT01IXLbDzkJnePCKLAe0bz3MRk2uh-55rbwDJozZIstvjT12VRn5iQ9DbK2NtD5ycgrTOhfUqvUM0tTvd6iN2KQLEueSZWnX9OobXoQBiWrEM7FslVz5HudzE_PityxEwEiShd0VwtS-KU5RWUNRr2ul4Itf2O0JFfH2sS6vs02XTikVfgBFOEI2NF9N9-Jin2eWTzzs58NtTYkGDOnLRwY7Il2Kpe9bp16Aw3i9ZmjdKEUh2ZRrlTeEibt5X7S3cnsDqjcW1YsqLxRYKO6fO2qv_HlD6cOVYaLxZaQYPfvnXYbQDfJopt236RZIZ_Pb5AOqPlN2VLzWAwBn5IvM1HX8z78NL6SRShrwLZom5O4dZO0tcIh4WAuislDQJhBGiMQ9fUZDYPrICvs4nw-sKitNIXNBzzapFzUh8XUzfV3mEVwWYAJljl9seu1APWfc8MFCSKCWgXsJRMTAqOpn21Sk3nTeXu3d3D9d0UPqOzuca9i37f5wdfBhOszhs1jaSgMrcX1D9bhwFMENZxsMeIcTbrSxtaWDaoxzkS1Vv2ZasDhQpVK4xPTM5nhbRAZBmPiDHLYglroN4D-Giqz_7hodIVv3Vr1ZZ9xIhPVEIc6gL4h0uIInvQn3Y6AFnB8r0zc",
+      "refresh": "rt_vhRmks8kQ-vgGanf2LprxIIgSXTlvEzyKngc-BrdAh0.JFzYWDCYjd_XBCb5stoeQQiUeEp__U4IsPfCmxZukuE",
+      "expires": 1777054558022,
+      "email": "carlsnavarr@gmail.com"
+    },
+    "anthropic:porfin": {
+      "type": "token",
+      "provider": "anthropic",
+      "token": "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"
+    },
+    "minimax-portal:default": {
+      "type": "oauth",
+      "provider": "minimax-portal",
+      "access": "sk-cp-SSCEgTET4mGBhRct2tFqkTLI0U_7OhvfjISWsp-oQxp9S_EOv7vXPg2ODwh2e9k7nXfbfEVFCzZWm15tH3698xKGiBjuU_4lbQfE9_M5Ag3f6-onIWJeEWY",
+      "refresh": "q1yehEnEuaGGsCaaawMScLJUQCSLvqVIs9Lk_aGmjEU=",
+      "expires": 1806608069078
+    },
+    "anthropic:usage": {
+      "type": "token",
+      "provider": "anthropic",
+      "token": "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"
     }
-  },
-  "order": {}
+  }
 }

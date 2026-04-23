@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "lastGood": {
+    "openai-codex": "openai-codex:carlsnavarr@gmail.com",
+    "anthropic": "anthropic:usage",
+    "openai": "openai:default",
+    "minimax-portal": "minimax-portal:default"
+  },
+  "usageStats": {
+    "openai-codex:default": {
+      "lastUsed": 1774894220515,
+      "errorCount": 0,
+      "lastFailureAt": 1774491044546
+    },
+    "anthropic:default": {
+      "errorCount": 0,
+      "lastFailureAt": 1775000883092,
+      "lastUsed": 1774999191266
+    },
+    "anthropic:pruebafinal": {
+      "errorCount": 0,
+      "lastUsed": 1774491055396,
+      "lastFailureAt": 1775000883584
+    },
+    "anthropic:thor": {
+      "errorCount": 0,
+      "lastFailureAt": 1775009741580
+    },
+    "openai:default": {
+      "errorCount": 0,
+      "lastUsed": 1774999164251,
+      "lastFailureAt": 1774999731120
+    },
+    "anthropic:clawclaw": {
+      "errorCount": 0,
+      "lastFailureAt": 1775009741381
+    },
+    "anthropic:k": {
+      "errorCount": 0,
+      "lastFailureAt": 1775009753667
+    },
+    "anthropic:primero": {
+      "errorCount": 0,
+      "lastFailureAt": 1775012622269
+    },
+    "openai-codex:carlsnavarr@gmail.com": {
+      "errorCount": 0,
+      "lastUsed": 1776877157034
+    },
+    "anthropic:claude": {
+      "errorCount": 0,
+      "lastFailureAt": 1775013642333
+    },
+    "anthropic:porfin": {
+      "errorCount": 0,
+      "lastUsed": 1775420211458,
+      "lastFailureAt": 1775015787766
+    },
+    "anthropic:usage": {
+      "errorCount": 0,
+      "lastUsed": 1776882175638
+    },
+    "minimax-portal:default": {
+      "errorCount": 0,
+      "lastUsed": 1775934724500
+    }
+  }
+}

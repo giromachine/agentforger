@@ -42,3 +42,24 @@ Domain owner for the Facturación (Invoicing/CFDI) module of the Mitla ERP syste
 - SAT catalog management (uso de CFDI, forma de pago, método de pago, régimen fiscal)
 - PDF and XML generation/storage
 - Integration points: Ventas (sales → invoice generation), Cobranza (payments → complemento de pago), Logística (shipments → carta porte if applicable)
+
+## Protocolo de comunicación
+
+Este agente recibe tareas de mitla-pm en FORMATO C definido en /agents/PROTOCOL.md.
+Al completar o bloquearse, reportar de vuelta a mitla-pm usando exactamente:
+
+COMPLETADO | [MOD-NNN] | [artefactos entregados] | [notas]
+BLOQUEADO | [MOD-NNN] | [razón del bloqueo] | [acción requerida]
+
+No se aceptan reportes en formato libre. El ID de tarea es obligatorio en el reporte.
+
+## Estado del módulo — v1
+
+La integración con Facturama PAC (cfdi-facturama) está pendiente para v2.
+
+En v1, el timbrado se realiza externamente en ContPAQi. El ERP solo
+recibe y archiva el PDF y XML resultantes. El módulo está completamente
+funcional bajo este esquema.
+
+No solicitar ni diseñar integración con Facturama hasta que el Auditor
+externo autorice el inicio de v2 y la skill cfdi-facturama esté construida.
